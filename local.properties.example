@@ -1,0 +1,16 @@
+# Google Maps and Places API Keys
+# Get from: https://console.cloud.google.com
+GOOGLE_MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY
+GOOGLE_PLACES_API_KEY=YOUR_GOOGLE_PLACES_API_KEY
+
+# Google Gemini API Key
+# Get from: https://makersuite.google.com/app/apikey
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+
+# Supabase Configuration
+# Get from: https://supabase.com
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+
+# Android SDK Configuration
+sdk.dir=/path/to/Android/sdk

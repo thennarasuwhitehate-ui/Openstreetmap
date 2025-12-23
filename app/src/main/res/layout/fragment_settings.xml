@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- User Profile Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_profile"
+            android:textAppearance="@style/TextSubtitle"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Vehicle Type -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorSurface"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicle_type"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/vehicle_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorBackground" />
+        </LinearLayout>
+
+        <!-- Fuel Type -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorSurface"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fuel_type"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/fuel_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorBackground" />
+        </LinearLayout>
+
+        <!-- Navigation Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Navigation Preferences"
+            android:textAppearance="@style/TextSubtitle"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Language Selection -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorSurface"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/language_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorBackground" />
+        </LinearLayout>
+
+        <!-- Accessibility Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accessibility"
+            android:textAppearance="@style/TextSubtitle"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Dark Mode Toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:background="@color/colorSurface"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dark_mode"
+                android:textColor="@color/colorText" />
+
+            <Switch
+                android:id="@+id/dark_mode_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Voice Assistant Toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:background="@color/colorSurface"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/voice_assistant"
+                android:textColor="@color/colorText" />
+
+            <Switch
+                android:id="@+id/voice_assistant_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Battery & Data Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Battery & Data"
+            android:textAppearance="@style/TextSubtitle"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Battery Saver Toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:background="@color/colorSurface"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/battery_saver"
+                android:textColor="@color/colorText" />
+
+            <Switch
+                android:id="@+id/battery_saver_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Account Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:textAppearance="@style/TextSubtitle"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/logout"
+            android:textAllCaps="false"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Clear History Button -->
+        <Button
+            android:id="@+id/btn_clear_history"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Clear Trip History"
+            android:textAllCaps="false"
+            android:layout_marginBottom="24dp" />
+    </LinearLayout>
+</ScrollView>

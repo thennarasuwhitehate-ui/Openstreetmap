@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">நாவிபாரத</string>
+
+    <!-- Navigation -->
+    <string name="navigation_in_progress">நேவிগேশன் நடந்து கொண்டிருக்கிறது</string>
+    <string name="turn_right">வலது திசையில் திரும்பவும்</string>
+    <string name="turn_left">இடது திசையில் திரும்பவும்</string>
+    <string name="go_straight">நேரே செல்லவும்</string>
+    <string name="continue_road">%s வழியில் தொடர்ந்து செல்லவும்</string>
+    <string name="roundabout">வட்ட சாலையில் %d வெளியேற்றம் எடுக்கவும்</string>
+    <string name="lane_guidance">%s பாதையில் இருக்கவும்</string>
+    <string name="speed_limit">வேக வரம்பு: %d கி.மீ/மணி</string>
+
+    <!-- Trip Info -->
+    <string name="distance_remaining">தூரம்: %d கி.மீ</string>
+    <string name="time_remaining">நேரம்: %d நிமிடங்கள்</string>
+    <string name="fuel_cost">எரிபொருள்: ₹%d</string>
+    <string name="toll_cost">வரி: ₹%d</string>
+
+    <!-- Features -->
+    <string name="where_to_go">எங்கு செல்ல வேண்டும்?</string>
+    <string name="search_destination">இலக்கை தேடுக</string>
+    <string name="recent_searches">சமீபத்திய தேடல்கள்</string>
+    <string name="favorite_routes">பிடித்த வழிகள்</string>
+    <string name="nearby_services">அقریب உபவనங்கள்</string>
+    <string name="petrol_bunk">பெட்ரோல் நிலையம்</string>
+    <string name="ev_charger">EV சார்జர்</string>
+    <string name="mechanic">மெக்கானிக்</string>
+    <string name="rest_area">отдыхового தகPlace</string>
+
+    <!-- Voice Commands -->
+    <string name="listening">கேட்டுக் கொண்டிருக்கிறது...</string>
+    <string name="mute">அமுக்கவும்</string>
+    <string name="unmute">அமுக்கவைப்பை நீக்கவும்</string>
+    <string name="repeat">மீண்டும் செய்யவும்</string>
+    <string name="voice_assistant">குரல் உதவியாளர்</string>
+
+    <!-- Settings -->
+    <string name="settings">அமைப்புகள்</string>
+    <string name="user_profile">பயனர் சுயவிவரம்</string>
+    <string name="vehicle_type">வாகன வகை</string>
+    <string name="fuel_type">எரிபொருள் வகை</string>
+    <string name="language">மொழி</string>
+    <string name="dark_mode">இருண்ட பயன்முறை</string>
+    <string name="battery_saver">பேட்டரி சேமிப்பான்</string>
+
+    <!-- Buttons -->
+    <string name="start">தொடங்கவும்</string>
+    <string name="cancel">ரத்து செய்யவும்</string>
+    <string name="ok">சரி</string>
+    <string name="save">சேமிக்கவும்</string>
+    <string name="delete">நீக்கவும்</string>
+    <string name="logout">வெளியேறவும்</string>
+
+    <!-- Errors -->
+    <string name="error_permission_denied">அனுமதி மறுக்கப்பட்டது</string>
+    <string name="error_no_internet">இணையம் இணைப்பு இல்லை</string>
+    <string name="error_location_unavailable">இருப்பிடம் கிடைக்கவில்லை</string>
+</resources>

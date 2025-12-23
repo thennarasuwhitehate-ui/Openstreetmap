@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NaviBharat - AI-Powered Navigation App for Indian Drivers
+
+A production-ready Android navigation application optimized for Indian roads, with real-time GPS navigation, AI voice assistant, and India-specific features.
 
 ## Getting Started
 

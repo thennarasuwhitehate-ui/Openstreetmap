@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk-res/androidx.constraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <!-- Map View Container -->
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Bottom Sheet for Navigation Instructions -->
+    <com.google.android.material.bottomsheet.BottomSheetBehavior
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorSurface"
+        app:behavior_peekHeight="120dp"
+        app:behavior_hideable="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Drag Handle -->
+            <View
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorTextSecondary" />
+
+            <!-- Next Turn Instruction -->
+            <TextView
+                android:id="@+id/instruction_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Turn right onto MG Road"
+                android:textAppearance="@style/NavigationInstruction"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Distance and Road Info -->
+            <TextView
+                android:id="@+id/distance_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="500m • MG Road"
+                android:textAppearance="@style/TextBody"
+                android:textColor="@color/colorTextSecondary"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Lane Guidance -->
+            <LinearLayout
+                android:id="@+id/lane_guidance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Quick Info Bar -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:layout_marginBottom="16dp">
+
+                <!-- ETA -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ETA"
+                        android:textAppearance="@style/TextCaption" />
+
+                    <TextView
+                        android:id="@+id/eta_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15 min"
+                        android:textAppearance="@style/TextSubtitle"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+
+                <!-- Distance -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Distance"
+                        android:textAppearance="@style/TextCaption" />
+
+                    <TextView
+                        android:id="@+id/distance_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 km"
+                        android:textAppearance="@style/TextSubtitle"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+
+                <!-- Fuel -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fuel"
+                        android:textAppearance="@style/TextCaption" />
+
+                    <TextView
+                        android:id="@+id/fuel_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹200"
+                        android:textAppearance="@style/TextSubtitle"
+                        android:textColor="@color/colorFuel" />
+                </LinearLayout>
+
+                <!-- Toll -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Toll"
+                        android:textAppearance="@style/TextCaption" />
+
+                    <TextView
+                        android:id="@+id/toll_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹150"
+                        android:textAppearance="@style/TextSubtitle"
+                        android:textColor="@color/colorToll" />
+                </LinearLayout>
+            </GridLayout>
+
+            <!-- Control Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:spacing="8dp">
+
+                <Button
+                    android:id="@+id/btn_mute"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mute"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="4dp" />
+
+                <Button
+                    android:id="@+id/btn_destination"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/where_to_go"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="4dp" />
+
+                <Button
+                    android:id="@+id/btn_more"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="More"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.bottomsheet.BottomSheetBehavior>
+</FrameLayout>

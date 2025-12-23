@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#00bfa5</color>
+    <color name="colorPrimaryDark">#00897b</color>
+    <color name="colorAccent">#00bfa5</color>
+
+    <!-- Background Colors (Dark Mode) -->
+    <color name="colorBackground">#1a1a1a</color>
+    <color name="colorSurface">#2d2d2d</color>
+    <color name="colorSurfaceVariant">#3a3a3a</color>
+
+    <!-- Text Colors -->
+    <color name="colorText">#ffffff</color>
+    <color name="colorTextSecondary">#b0b0b0</color>
+    <color name="colorTextTertiary">#808080</color>
+
+    <!-- Status Colors -->
+    <color name="colorSuccess">#4caf50</color>
+    <color name="colorWarning">#ffa500</color>
+    <color name="colorError">#ff6b6b</color>
+    <color name="colorInfo">#2196f3</color>
+
+    <!-- Navigation Colors -->
+    <color name="colorNavigation">#00bfa5</color>
+    <color name="colorNavigationNext">#ffeb3b</color>
+
+    <!-- Service Colors -->
+    <color name="colorPetrol">#ff6b6b</color>
+    <color name="colorEV">#4caf50</color>
+    <color name="colorMechanic">#2196f3</color>
+    <color name="colorRest">#ff9800</color>
+
+    <!-- Hazard Colors -->
+    <color name="colorHazardLow">#ffeb3b</color>
+    <color name="colorHazardMedium">#ff9800</color>
+    <color name="colorHazardHigh">#ff5722</color>
+
+    <!-- Toll & Fuel -->
+    <color name="colorToll">#ffa500</color>
+    <color name="colorFuel">#4caf50</color>
+
+    <!-- Route Colors (Traffic) -->
+    <color name="colorTrafficFree">#4caf50</color>
+    <color name="colorTrafficModerate">#ffeb3b</color>
+    <color name="colorTrafficCongested">#ff5722</color>
+
+    <!-- UI Element Colors -->
+    <color name="colorButton">#00bfa5</color>
+    <color name="colorButtonDisabled">#505050</color>
+    <color name="colorDivider">#404040</color>
+    <color name="colorBorder">#505050</color>
+
+    <!-- Overlay Colors -->
+    <color name="colorOverlay">#000000</color>
+    <color name="colorOverlayLight">#ffffff</color>
+
+    <!-- Map Pin Colors -->
+    <color name="colorMarkerCurrent">#00bfa5</color>
+    <color name="colorMarkerDestination">#ff5722</color>
+    <color name="colorMarkerWaypoint">#ffeb3b</color>
+</resources>

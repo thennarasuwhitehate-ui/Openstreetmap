@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NaviBharat</string>
+    <string name="file_provider_authority">com.navibharat.fileprovider</string>
+
+    <!-- Navigation -->
+    <string name="navigation_in_progress">Navigation in progress</string>
+    <string name="turn_right">Turn right</string>
+    <string name="turn_left">Turn left</string>
+    <string name="go_straight">Go straight</string>
+    <string name="continue_road">Continue on %s</string>
+    <string name="roundabout">At roundabout take exit %d</string>
+    <string name="lane_guidance">Keep %s lane</string>
+    <string name="speed_limit">Speed limit: %d km/h</string>
+
+    <!-- Trip Info -->
+    <string name="distance_remaining">Distance: %d km</string>
+    <string name="time_remaining">Time: %d mins</string>
+    <string name="fuel_cost">Fuel: ₹%d</string>
+    <string name="toll_cost">Toll: ₹%d</string>
+
+    <!-- Features -->
+    <string name="where_to_go">Where to go?</string>
+    <string name="search_destination">Search destination</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="favorite_routes">Favorite Routes</string>
+    <string name="nearby_services">Nearby Services</string>
+    <string name="petrol_bunk">Petrol Bunk</string>
+    <string name="ev_charger">EV Charger</string>
+    <string name="mechanic">Mechanic</string>
+    <string name="rest_area">Rest Area</string>
+
+    <!-- Voice Commands -->
+    <string name="listening">Listening...</string>
+    <string name="mute">Mute</string>
+    <string name="unmute">Unmute</string>
+    <string name="repeat">Repeat</string>
+    <string name="voice_assistant">Voice Assistant</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="user_profile">User Profile</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="fuel_type">Fuel Type</string>
+    <string name="language">Language</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="battery_saver">Battery Saver</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+
+    <!-- Buttons -->
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="logout">Logout</string>
+
+    <!-- Errors -->
+    <string name="error_permission_denied">Permission denied</string>
+    <string name="error_no_internet">No internet connection</string>
+    <string name="error_location_unavailable">Location unavailable</string>
+    <string name="error_route_not_found">Route not found</string>
+
+    <!-- Plurals -->
+    <plurals name="distance_meters">
+        <item quantity="one">%d meter</item>
+        <item quantity="other">%d meters</item>
+    </plurals>
+
+    <plurals name="distance_km">
+        <item quantity="one">%d km</item>
+        <item quantity="other">%d km</item>
+    </plurals>
+</resources>

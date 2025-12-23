@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">नविभारत</string>
+
+    <!-- Navigation -->
+    <string name="navigation_in_progress">नेविगेशन जारी है</string>
+    <string name="turn_right">दाएं मुड़ें</string>
+    <string name="turn_left">बाएं मुड़ें</string>
+    <string name="go_straight">सीधे जाएं</string>
+    <string name="continue_road">%s पर जारी रखें</string>
+    <string name="roundabout">चक्कर पर %d निकास लें</string>
+    <string name="lane_guidance">%s लेन में रहें</string>
+    <string name="speed_limit">गति सीमा: %d किमी/घ</string>
+
+    <!-- Trip Info -->
+    <string name="distance_remaining">दूरी: %d किमी</string>
+    <string name="time_remaining">समय: %d मिनट</string>
+    <string name="fuel_cost">ईंधन: ₹%d</string>
+    <string name="toll_cost">टोल: ₹%d</string>
+
+    <!-- Features -->
+    <string name="where_to_go">कहाँ जाना है?</string>
+    <string name="search_destination">गंतव्य खोजें</string>
+    <string name="recent_searches">हाल की खोजें</string>
+    <string name="favorite_routes">पसंदीदा मार्ग</string>
+    <string name="nearby_services">नजदीकी सेवाएं</string>
+    <string name="petrol_bunk">पेट्रोल पंप</string>
+    <string name="ev_charger">ईवी चार्जर</string>
+    <string name="mechanic">मैकेनिक</string>
+    <string name="rest_area">विश्राम क्षेत्र</string>
+
+    <!-- Voice Commands -->
+    <string name="listening">सुन रहा हूँ...</string>
+    <string name="mute">म्यूट करें</string>
+    <string name="unmute">अनम्यूट करें</string>
+    <string name="repeat">दोहराएं</string>
+    <string name="voice_assistant">वॉयस सहायक</string>
+
+    <!-- Settings -->
+    <string name="settings">सेटिंग्स</string>
+    <string name="user_profile">उपयोगकर्ता प्रोफ़ाइल</string>
+    <string name="vehicle_type">वाहन प्रकार</string>
+    <string name="fuel_type">ईंधन प्रकार</string>
+    <string name="language">भाषा</string>
+    <string name="dark_mode">डार्क मोड</string>
+    <string name="battery_saver">बैटरी सेवर</string>
+
+    <!-- Buttons -->
+    <string name="start">शुरू करें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="ok">ठीक है</string>
+    <string name="save">सहेजें</string>
+    <string name="delete">हटाएं</string>
+    <string name="logout">लॉग आउट करें</string>
+
+    <!-- Errors -->
+    <string name="error_permission_denied">अनुमति अस्वीकृत</string>
+    <string name="error_no_internet">इंटरनेट कनेक्शन नहीं</string>
+    <string name="error_location_unavailable">स्थान अनुपलब्ध</string>
+</resources>
