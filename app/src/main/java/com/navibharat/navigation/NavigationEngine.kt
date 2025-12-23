@@ -23,6 +23,9 @@ class NavigationEngine @Inject constructor(
     private val _reachingTurn = MutableStateFlow<NavigationInstruction?>(null)
     val reachingTurn: StateFlow<NavigationInstruction?> = _reachingTurn
 
+    private val _navigationInstructions = MutableStateFlow<NavigationInstruction?>(null)
+    val navigationInstructions: StateFlow<NavigationInstruction?> = _navigationInstructions
+
     private var deviationCounter = 0
 
     /**
@@ -71,6 +74,9 @@ class NavigationEngine @Inject constructor(
         } else {
             _reachingTurn.value = null
         }
+
+        // Update current navigation instruction
+        _navigationInstructions.value = nextInstruction
 
         // Check for off-route condition
         val isOffRoute = checkOffRoute(currentLocation, route)

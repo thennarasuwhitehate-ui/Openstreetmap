@@ -27,6 +27,7 @@ class VoiceNavigationManager @Inject constructor(
 
     private val instructionQueue = mutableListOf<VoiceInstruction>()
     private var isPlaying = false
+    private var lastInstruction: VoiceInstruction? = null
 
     private val _voiceState = MutableStateFlow<VoiceState>(VoiceState.IDLE)
     val voiceState: StateFlow<VoiceState> = _voiceState
@@ -103,6 +104,7 @@ class VoiceNavigationManager @Inject constructor(
         if (!ttsInitialized) return
 
         val instruction = instructionQueue.removeAt(0)
+        lastInstruction = instruction
         isPlaying = true
 
         try {
@@ -181,6 +183,27 @@ class VoiceNavigationManager @Inject constructor(
     fun setSpeechRate(rate: Float) {
         voiceSpeed = rate.coerceIn(0.8f, 1.2f)
         Timber.i("Speech rate set to: $voiceSpeed")
+    }
+
+    fun repeatLastInstruction() {
+        if (lastInstruction != null) {
+            speak(lastInstruction!!.text, lastInstruction!!.priority)
+            Timber.i("Repeating last instruction: ${lastInstruction!!.text}")
+        } else {
+            Timber.w("No previous instruction to repeat")
+        }
+    }
+
+    fun setLanguage(languageCode: String) {
+        val locale = when (languageCode.lowercase()) {
+            "ta" -> Locale("ta", "IN")
+            "hi" -> Locale("hi", "IN")
+            "te" -> Locale("te", "IN")
+            "kn" -> Locale("kn", "IN")
+            "ml" -> Locale("ml", "IN")
+            else -> Locale("en", "IN")
+        }
+        setLanguage(locale)
     }
 
     fun destroy() {
